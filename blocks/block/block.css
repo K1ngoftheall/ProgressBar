@@ -1,0 +1,21 @@
+.block{
+    display: flex;
+    flex-direction: column;
+    min-width: 280px;
+    max-width: 528px;
+    
+    height: 280px;
+    padding: 20px;
+    
+    margin: auto;
+    font-family: 'Inter', sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: #fff;
+}
+
+@media screen and (orientation: portrait){
+    .block{
+        height: 528px;
+        max-width: 280px;
+    }
+}

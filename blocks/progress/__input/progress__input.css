@@ -1,0 +1,12 @@
+.progress__input{
+    appearance: textfield;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 2px 0px;
+    max-width: 46px;
+    width: 100%;
+    border: 2px solid;
+    border-color: #ccc;
+    font-weight: 500;
+    text-align: center;
+}

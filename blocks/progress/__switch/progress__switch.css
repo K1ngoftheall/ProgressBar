@@ -1,0 +1,27 @@
+.progress__switch{
+    display: inline-block;
+    width: 50px; 
+    height: 25px; 
+    border-radius: 19px; 
+    background: #bfbfbf; 
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 300ms; 
+}
+
+.progress__switch::after{
+    content: "";
+    height: 20px; 
+    width: 20px; 
+    border-radius: 50%;
+    background: #fff; 
+    top: 2px; 
+    left: 2px; 
+    transition-duration: 300ms; 
+    position: absolute;
+    z-index: 1;
+}

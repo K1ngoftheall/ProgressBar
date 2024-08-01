@@ -1,0 +1,10 @@
+.progress__settings{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 132px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    gap: 20px;
+}

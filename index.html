@@ -6,31 +6,36 @@
     <title>ProgressBar</title>
     <link rel="stylesheet" href="./pages/index.css" />
   </head>
-  <body class="root">
+  <body >
     <section class="block " >
         <h1 class="block__title">Progress</h1>
-        <span class="error"></span>
         <main class="progress">
             <div class="progress__bar" id="progress__bar">
 
               <svg id="progress__svg" width="150" height="150" viewBox="0 0 100 100">
                 <circle cx="50" cy="50" r="45" stroke="#f0f0f0" stroke-width="10"fill="none"></circle>
-                <path id="progress__circle " stroke="#307ffe" stroke-width="10" fill="none"></path>
+                <path
+                id="progress-arc"
+                stroke="#307ffe"
+                stroke-width="7"
+                fill="none"
+              ></path>
               </svg>
             </div>
             <div class="progress__settings ">
-
-                <div class="progress__setting"><!-- инпут с числом-->
+              <!--<span class="progress__error" id="value-input-error"></span> -->
+                <div class="progress__setting">
                     <label class="progress__label">
-                        <input type="number" class="progress__input" id="value-input" min="0" max="100">
+                        <input type="number" class="progress__input" inputmode="numeric" id="value-input" min="0" max="100">
+                       
                     </label>
                     
                     <p class="progress__input-name">Value</p>
                 </div>
-
+                
                 <div class="progress__setting">
                     <label class="progress__label">
-                      <div class="switch-btn progress__switch" id="animate-check"></div>
+                      <div class="progress__switch" id="animate-check"></div>
                      
                     </label>
                     <p class="progress__input-name">Animate</p>
@@ -39,7 +44,7 @@
                 <div class="progress__setting">
                     <label class="progress__label">
                        
-                        <div class="switch-btn progress__switch" id="hide-check"></div>
+                        <div class="progress__switch" id="hide-check"></div>
                     </label>
                     <p class="progress__input-name">Hide</p>
                 </div>
