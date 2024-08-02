@@ -1,0 +1,15 @@
+.progress__style-btn{
+    width: 50px; 
+    height: 25px; 
+    border-radius: 19px; 
+    background: #bfbfbf;
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+  }
+  
+  .progress__style-btn:hover{
+    background: #307ffe;
+  }

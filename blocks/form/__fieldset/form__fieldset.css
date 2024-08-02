@@ -1,0 +1,12 @@
+.form__fieldset{
+   margin: 0 auto;
+   border: 0;
+   padding: 0;
+   width: calc(100% - (36px + 36px));
+}
+
+@media screen and (max-width: 767px) {
+   .form__fieldset {
+      width: calc(100% - (22px + 22px));
+   }
+}

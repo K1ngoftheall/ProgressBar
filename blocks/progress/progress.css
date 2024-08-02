@@ -1,5 +1,5 @@
 .progress{
-    margin: auto ;
+    margin: calc((300px - 196px)/2) 0 ;
     display: flex;
     flex-direction: row;
     align-items: center;

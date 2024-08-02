@@ -1,0 +1,11 @@
+.block__nav{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #307ffe;
+    width: calc(100% - (2px + 6px));
+    margin: 0;
+    border-radius: 20px;
+    padding: 0 0px 0 5px;
+    max-height: 25px;
+    height: 30px;
+}

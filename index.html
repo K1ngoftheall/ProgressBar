@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,13 +7,23 @@
     <link rel="stylesheet" href="./pages/index.css" />
   </head>
   <body >
-    <section class="block " >
-        <h1 class="block__title">Progress</h1>
-        <main class="progress">
+    <div class="page">
+    <section class="block ">
+      <div class="drop-down">
+        <div class="block__nav">
+          <h1 class="block__title">Progress</h1>
+          <div class="block__open">
+            <p class="block__open-text">Open</p>
+            <button class="progress__switch dropbtn" type="button" id="hide-btn" onclick="myFunction()"></button>
+          </div>
+          
+        </div>
+        <div class="block__slide " id="Dropdown">
+          <main class="progress">
             <div class="progress__bar" id="progress__bar">
 
               <svg id="progress__svg" width="150" height="150" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="45" stroke="#f0f0f0" stroke-width="10"fill="none"></circle>
+                <circle id="progress__circle" cx="50" cy="50" r="45" stroke="#f0f0f0" stroke-width="10"fill="none"></circle>
                 <path
                 id="progress-arc"
                 stroke="#307ffe"
@@ -23,7 +33,7 @@
               </svg>
             </div>
             <div class="progress__settings ">
-              <!--<span class="progress__error" id="value-input-error"></span> -->
+            <span class="progress__error" id="value-input-error"></span> 
                 <div class="progress__setting">
                     <label class="progress__label">
                         <input type="number" class="progress__input" inputmode="numeric" id="value-input" min="0" max="100">
@@ -43,14 +53,56 @@
 
                 <div class="progress__setting">
                     <label class="progress__label">
-                       
-                        <div class="progress__switch" id="hide-check"></div>
+                       <button type="button" class="progress__style-btn" ></button>
                     </label>
-                    <p class="progress__input-name">Hide</p>
+                    <p class="progress__input-name">Style</p>
                 </div>
             </div>
-        </main>
+          </main>
+        </div>
+    </div>
+
+    <section class="popup popup_style" id="popup_style">
+      <div class="popup__container">
+        <button class="popup__close-icon" type="button">
+          <img
+            class="popup__close-img"
+            src="./images/CloseIcon.svg"
+            alt="Закрыть"
+          />
+        </button>
+        <h2 class="popup__title">Choose&nbsp;a&nbsp;color</h2>
+        <form class="form" name="styleForm" novalidate>
+          <div class="form__fieldset">
+            <label class="form__label">
+              <p class="progress__input-name">background color</p>
+              <input
+                type="color"
+                class="form__input form__input_type_background"
+                name="background-style"
+                id="background-input"
+              />
+            </label>
+            <label class="form__label">
+              <p class="progress__input-name">circle color</p>
+              <input
+                type="color"
+                class="form__input form__input_type_circle"
+                name="circle-style"
+                id="circle-input"
+              />
+            </label>
+          </div>
+          <button class="form__submit" type="submit">Сохранить</button>
+        </form>
+      </div>
     </section>
-    <script src="./scripts/index.js"></script>
+    </section>
+
+
+
+  </div>
+    <script src="./scripts/ProgressBarLogic.js"></script>
+    <script src="./scripts/PopupLogic.js"></script>
   </body>
   </html>

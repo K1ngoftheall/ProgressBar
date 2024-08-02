@@ -1,0 +1,10 @@
+.form__label {
+   display: flex;
+   justify-content: space-between;
+   padding: 0 15px;
+}
+
+/*.form__label:first-child{
+   margin: 0 0 30px;
+}
+*/
